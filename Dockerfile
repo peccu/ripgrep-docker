@@ -1,7 +1,7 @@
 FROM alpine:latest as build
 MAINTAINER Kentaro Shimatani <peccul@gmail.com>
 
-ENV RG_VERSION=0.10.0
+ENV RG_VERSION=11.0.2
 RUN set -x \
   && wget https://github.com/BurntSushi/ripgrep/releases/download/${RG_VERSION}/ripgrep-${RG_VERSION}-x86_64-unknown-linux-musl.tar.gz \
   && tar xzf ripgrep-${RG_VERSION}-x86_64-unknown-linux-musl.tar.gz \
